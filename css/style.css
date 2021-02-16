@@ -1,0 +1,81 @@
+
+/*styling för största rubrik*/
+h1{
+  color: rgb(180, 0, 0);
+  text-shadow: 2px 2px rgb(233, 179, 41);
+  font-size: 50px;
+}
+/*style för footer*/
+footer{
+  background-color: rgb(24, 23, 23);
+  color: white;
+}
+
+/* Meny knappen */
+.dropbtn {
+  background-color: rgb(180, 0, 0);
+  color: rgb(233, 179, 41);
+  height: 50px;
+  width: 200px;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Meny knappen visar när man håller över den med musen */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(255, 61, 0);
+}
+
+/* Vart Menyn kommer att hamna när man clickar ner den */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Det som visas när man klickar fram menyn*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* hur länkarna där i ska se ut */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* färgen på länkarna när man håller över dem med musen */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Säger bara att Menyn ska visas */
+.show {display:block;}
+
+/* styling av bilder på första sidan*/
+img {
+
+  width: 60vw;
+  padding: 0px;
+  margin-bottom: 20px;
+}
+
+/*sticker style bara när skärmen är större än 1300px*/
+@media only screen and (min-width: 1300px){
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
