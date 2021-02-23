@@ -18,7 +18,8 @@ footer{
 /* Meny knappen */
 .dropbtn {
   background-color: rgb(180, 0, 0);
-  color: rgb(233, 179, 41);
+/*Text color*/
+  color: white;
   height: 50px;
   width: 200px;
   padding: 16px;
